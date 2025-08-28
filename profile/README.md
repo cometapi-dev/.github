@@ -57,7 +57,7 @@ CometAPI is a comprehensive AI platform that provides unified access to over **5
 ### Quick CometAPI call
 ```bash
 curl -X POST "https://api.cometapi.com/v1/chat/completions" \
-  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Authorization: Bearer $COMETAPI_KEY" \
   -H "Content-Type: application/json" \
   -d '{"model": "gpt-5-mini", "messages": [{"role": "user", "content": "Hello!"}]}'
 ```
