@@ -49,7 +49,12 @@ CometAPI is a comprehensive AI platform that provides unified access to over **5
 
 ## ✨ Getting Started
 
-### Quick Setup
+### Get Your API Key
+1. Sign up for a CometAPI account [CometAPI Login](https://api.cometapi.com/)
+2. Visit [CometAPI Console](https://api.cometapi.com/console/token)
+3. Start building with AI now!
+
+### Quick CometAPI call
 ```bash
 curl -X POST "https://api.cometapi.com/v1/chat/completions" \
   -H "Authorization: Bearer YOUR_API_KEY" \
@@ -57,10 +62,6 @@ curl -X POST "https://api.cometapi.com/v1/chat/completions" \
   -d '{"model": "gpt-5-mini", "messages": [{"role": "user", "content": "Hello!"}]}'
 ```
 
-### Get Your API Key
-1. Sign up for a CometAPI account [CometAPI Login](https://api.cometapi.com/)
-2. Visit [CometAPI Console](https://api.cometapi.com/console/token)
-3. Start building with AI now!
 
 
 ## 📚 Resources
