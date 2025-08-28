@@ -1,5 +1,3 @@
-# CometAPI Community
-
 <div align="center">
 
 ![CometAPI Icon](https://raw.githubusercontent.com/cometapi-dev/.github/refs/heads/main/assets/cometapi_logo.png)
