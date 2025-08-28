@@ -35,7 +35,7 @@ CometAPI is a comprehensive AI platform that provides unified access to over **5
 - **Audio & Music**: Suno Music API, voice synthesis models
 - **Specialized Models**: Coding assistants, translation services, OCR
 
-*View all 500+ available models at [api.cometapi.com/pricing](https://api.cometapi.com/pricing)*
+*View all 500+ available models at [CometAPI Model List](https://api.cometapi.com/pricing)*
 
 ### **⚡ Real-time Model Access**
 - Instant access to newly released AI models
@@ -61,7 +61,6 @@ curl -X POST "https://api.cometapi.com/v1/chat/completions" \
   -H "Content-Type: application/json" \
   -d '{"model": "gpt-5-mini", "messages": [{"role": "user", "content": "Hello!"}]}'
 ```
-
 
 
 ## 📚 Resources
