@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![CometAPI Logo](https://github.com/cometapi-dev/.github/blob/main/assets/cometapi_logo?raw=true)
+![CometAPI Icon](https://raw.githubusercontent.com/cometapi-dev/.github/refs/heads/main/assets/cometapi_logo.png)
 
 
 **All AI Models in One API - 500+ AI Models**
