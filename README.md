@@ -1,4 +1,3 @@
-# CometAPI Community
 
 <div align="center">
 
