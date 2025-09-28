@@ -1,0 +1,398 @@
+app:
+  description:
+    Generate images using the nano-banana(gemini-2.5-flash-image-preview)
+    model via CometAPI.
+  icon: 🏞️
+  icon_background: "#EFF1F5"
+  mode: advanced-chat
+  name:
+    Generate images using the nano-banana(gemini-2.5-flash-image-preview) model
+    via CometAPI.
+  use_icon_as_answer_icon: false
+dependencies:
+  - current_identifier: null
+    type: marketplace
+    value:
+      marketplace_plugin_unique_identifier: langgenius/cometapi:1.0.0@44f33849945f7fae6fb9b21656f3ab4c4544aa8c4f9728cfdd7a889b0b878428
+      version: null
+  - current_identifier: null
+    type: marketplace
+    value:
+      marketplace_plugin_unique_identifier: bowenliang123/base64_codec:0.4.0@886cc78123c7d3f32f2f836ae2926bd8a6a0a93cb21f72409f8ca01c9d0104bd
+      version: null
+  - current_identifier: null
+    type: marketplace
+    value:
+      marketplace_plugin_unique_identifier: langgenius/regex:0.0.3@257eaab07b70ab1f77a881b870eefee93fc8fd0dd13350077410264f31695039
+      version: null
+kind: app
+version: 0.4.0
+workflow:
+  conversation_variables: []
+  environment_variables: []
+  features:
+    file_upload:
+      allowed_file_extensions:
+        - .JPG
+        - .JPEG
+        - .PNG
+        - .GIF
+        - .WEBP
+        - .SVG
+      allowed_file_types:
+        - image
+      allowed_file_upload_methods:
+        - local_file
+        - remote_url
+      enabled: false
+      fileUploadConfig:
+        audio_file_size_limit: 50
+        batch_count_limit: 5
+        file_size_limit: 15
+        image_file_size_limit: 10
+        video_file_size_limit: 100
+        workflow_file_upload_limit: 10
+      image:
+        enabled: false
+        number_limits: 3
+        transfer_methods:
+          - local_file
+          - remote_url
+      number_limits: 3
+    opening_statement: ""
+    retriever_resource:
+      enabled: false
+    sensitive_word_avoidance:
+      enabled: false
+    speech_to_text:
+      enabled: false
+    suggested_questions: []
+    suggested_questions_after_answer:
+      enabled: false
+    text_to_speech:
+      enabled: false
+      language: ""
+      voice: ""
+  graph:
+    edges:
+      - data:
+          isInLoop: false
+          sourceType: start
+          targetType: llm
+        id: 1711528914102-source-1711528917469-target
+        source: "1711528914102"
+        sourceHandle: source
+        target: "1711528917469"
+        targetHandle: target
+        type: custom
+        zIndex: 0
+      - data:
+          isInLoop: false
+          sourceType: llm
+          targetType: tool
+        id: 1711528917469-source-1759050634270-target
+        source: "1711528917469"
+        sourceHandle: source
+        target: "1759050634270"
+        targetHandle: target
+        type: custom
+        zIndex: 0
+      - data:
+          isInLoop: false
+          sourceType: tool
+          targetType: tool
+        id: 1759050634270-source-1759051303828-target
+        source: "1759050634270"
+        sourceHandle: source
+        target: "1759051303828"
+        targetHandle: target
+        type: custom
+        zIndex: 0
+      - data:
+          isInLoop: false
+          sourceType: tool
+          targetType: answer
+        id: 1759051303828-source-1711528919501-target
+        source: "1759051303828"
+        sourceHandle: source
+        target: "1711528919501"
+        targetHandle: target
+        type: custom
+        zIndex: 0
+    nodes:
+      - data:
+          desc: ""
+          selected: false
+          title: Start
+          type: start
+          variables: []
+        height: 52
+        id: "1711528914102"
+        position:
+          x: 268.61866494466426
+          y: 2648.9154695254856
+        positionAbsolute:
+          x: 268.61866494466426
+          y: 2648.9154695254856
+        selected: false
+        sourcePosition: right
+        targetPosition: left
+        type: custom
+        width: 242
+      - data:
+          context:
+            enabled: true
+            variable_selector:
+              - sys
+              - query
+          desc:
+            Invoking large language models to answer questions or process natural
+            language
+          memory:
+            query_prompt_template: "{{#sys.query#}}"
+            role_prefix:
+              assistant: ""
+              user: ""
+            window:
+              enabled: false
+              size: 50
+          model:
+            completion_params:
+              max_tokens: 512
+              temperature: 0.7
+              top_p: 1
+            mode: chat
+            name: gemini-2.5-flash-image-preview
+            provider: langgenius/cometapi/cometapi
+          prompt_template:
+            - id: 1cd237d8-8335-4253-9162-d95d8305952a
+              role: system
+              text:
+                "You are a helpful assistant. \nUse the following context as your\
+                \ learned knowledge, inside <context></context> XML tags.\n<context>\n\
+                {{#context#}}\n</context>\nWhen answer to user:\n- If you don't know,\
+                \ just say that you don't know.\n- If you don't know when you are not\
+                \ sure, ask for clarification.\nAvoid mentioning that you obtained the\
+                \ information from the context.\nAnd answer according to the language\
+                \ of the user's question."
+          selected: false
+          structured_output_enabled: false
+          title: LLM
+          type: llm
+          variables: []
+          vision:
+            enabled: false
+        height: 148
+        id: "1711528917469"
+        position:
+          x: 592.5213581447513
+          y: 2637.2618485714706
+        positionAbsolute:
+          x: 592.5213581447513
+          y: 2637.2618485714706
+        selected: false
+        sourcePosition: right
+        targetPosition: left
+        type: custom
+        width: 242
+      - data:
+          answer: "{{#1759051303828.files#}}"
+          desc: ""
+          selected: false
+          title: Answer
+          type: answer
+          variables: []
+        height: 103
+        id: "1711528919501"
+        position:
+          x: 1270.242553487017
+          y: 2673.3384217643397
+        positionAbsolute:
+          x: 1270.242553487017
+          y: 2673.3384217643397
+        selected: true
+        sourcePosition: right
+        targetPosition: left
+        type: custom
+        width: 242
+      - data:
+          is_team_authorization: true
+          paramSchemas:
+            - auto_generate: null
+              default: null
+              form: llm
+              human_description:
+                en_US: Content to be extracted
+                ja_JP: Content to be extracted
+                pt_BR: Content to be extracted
+                zh_Hans: 内容
+              label:
+                en_US: Content to be extracted
+                ja_JP: Content to be extracted
+                pt_BR: Content to be extracted
+                zh_Hans: 内容
+              llm_description: ""
+              max: null
+              min: null
+              name: content
+              options: []
+              placeholder: null
+              precision: null
+              required: true
+              scope: null
+              template: null
+              type: string
+            - auto_generate: null
+              default: null
+              form: llm
+              human_description:
+                en_US: Regular expression
+                ja_JP: Regular expression
+                pt_BR: Regular expression
+                zh_Hans: 正则表达式
+              label:
+                en_US: Regular expression
+                ja_JP: Regular expression
+                pt_BR: Regular expression
+                zh_Hans: 正则表达式
+              llm_description: ""
+              max: null
+              min: null
+              name: expression
+              options: []
+              placeholder: null
+              precision: null
+              required: true
+              scope: null
+              template: null
+              type: string
+          params:
+            content: ""
+            expression: ""
+          provider_id: langgenius/regex/regex
+          provider_name: langgenius/regex/regex
+          provider_type: builtin
+          selected: false
+          title: Regex Extract
+          tool_configurations: {}
+          tool_description: A tool for extracting matching content using regular expressions.
+          tool_label: Regex Extract
+          tool_name: regex_extract
+          tool_node_version: "2"
+          tool_parameters:
+            content:
+              type: mixed
+              value: "{{#1711528917469.text#}}"
+            expression:
+              type: mixed
+              value: '!\[image\]\(data:image/png;base64,([^)]+)\)'
+          type: tool
+        height: 52
+        id: "1759050634270"
+        position:
+          x: 953.9136148220815
+          y: 2631.979194081264
+        positionAbsolute:
+          x: 953.9136148220815
+          y: 2631.979194081264
+        selected: false
+        sourcePosition: right
+        targetPosition: left
+        type: custom
+        width: 242
+      - data:
+          is_team_authorization: true
+          paramSchemas:
+            - auto_generate: null
+              default: null
+              form: llm
+              human_description:
+                en_US:
+                  Base64 encoded image string, default convert to PNG, support PNG
+                  ("data:image/png;base64" prefix) and JPG ("data:image/jpeg;base64" prefix)
+                ja_JP:
+                  Base64 encoded image string, default convert to PNG, support PNG
+                  ("data:image/png;base64" prefix) and JPG ("data:image/jpeg;base64" prefix)
+                pt_BR:
+                  Base64 encoded image string, default convert to PNG, support PNG
+                  ("data:image/png;base64" prefix) and JPG ("data:image/jpeg;base64" prefix)
+                zh_Hans: Base64 编码的图片字符串，默认转为PNG格式，支持PNG格式（data:image/png;base64开头）及JPG格式（data:image/jpeg;base64开头）
+              label:
+                en_US: Base64 encoded Text
+                ja_JP: Base64 encoded Text
+                pt_BR: Base64 encoded Text
+                zh_Hans: 已 Base64 编码的图片字符串
+              llm_description: A tool for decoding Base64-encoded text to image file
+              max: null
+              min: null
+              name: encoded_text
+              options: []
+              placeholder: null
+              precision: null
+              required: true
+              scope: null
+              template: null
+              type: string
+            - auto_generate: null
+              default: null
+              form: llm
+              human_description:
+                en_US: Filename of the output file
+                ja_JP: Filename of the output file
+                pt_BR: Filename of the output file
+                zh_Hans: 输出文件名
+              label:
+                en_US: Filename of the output file
+                ja_JP: Filename of the output file
+                pt_BR: Filename of the output file
+                zh_Hans: 输出文件名
+              llm_description: ""
+              max: null
+              min: null
+              name: output_filename
+              options: []
+              placeholder: null
+              precision: null
+              required: false
+              scope: null
+              template: null
+              type: string
+          params:
+            encoded_text: ""
+            output_filename: ""
+          provider_id: bowenliang123/base64_codec/base64_codec
+          provider_name: bowenliang123/base64_codec/base64_codec
+          provider_type: builtin
+          selected: false
+          title: Base64 Text to Image
+          tool_configurations: {}
+          tool_description: Decode Base64-encoded text to an image file
+          tool_label: Base64 Text to Image
+          tool_name: base64_image_decoder
+          tool_node_version: "2"
+          tool_parameters:
+            encoded_text:
+              type: mixed
+              value: "{{#1759050634270.text#}}"
+            output_filename:
+              type: mixed
+              value: image
+          type: tool
+        height: 52
+        id: "1759051303828"
+        position:
+          x: 936.1977778859483
+          y: 2747.1629581303523
+        positionAbsolute:
+          x: 936.1977778859483
+          y: 2747.1629581303523
+        selected: false
+        sourcePosition: right
+        targetPosition: left
+        type: custom
+        width: 242
+    viewport:
+      x: 87.65558753516711
+      y: -1793.3497820792327
+      zoom: 0.8038457490117803
+  rag_pipeline_variables: []
