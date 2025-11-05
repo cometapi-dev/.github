@@ -6,7 +6,7 @@
 
 **All AI Models in One API - 500+ AI Models**
 
-[![Website](https://img.shields.io/badge/Website-cometapi.com-blue)](https://www.cometapi.com/)
+[![Website](https://img.shields.io/badge/Website-cometapi.com-blue)](https://www.cometapi.com/?utm_source=github&utm_medium=readme&utm_campaign=badge)
 
 [![Discord](https://img.shields.io/badge/Discord-Join%20Community-7289da?logo=discord&logoColor=white)](https://discord.com/invite/HMpuV6FCrG)
 [![Twitter](https://img.shields.io/badge/Twitter-Follow%20Us-1da1f2?logo=x&logoColor=white)](https://x.com/cometapi2025)
@@ -31,7 +31,7 @@ CometAPI is a comprehensive AI platform that provides unified access to over **5
 ### **🤖 Comprehensive Model Coverage**
 - **LLM Providers**: OpenAI, Anthropic, Google, Grok, Deepseek, Alibaba, Zhipu, and many more
 - **Image Generation**: DALL-E, Midjourney, Stable Diffusion
-- **Video Creation**: Suno, Veo 3, Kling 2.0, Midjourney Video
+- **Video Creation**: Sora, Suno, Veo, Kling
 - **Audio & Music**: Suno Music API, voice synthesis models
 - **Specialized Models**: Coding assistants, translation services, OCR
 
@@ -46,6 +46,26 @@ CometAPI is a comprehensive AI platform that provides unified access to over **5
 - **Free Tier**: $0.1 credit for new users
 - **Pay-as-you-go**: Usage-based pricing
 - **Enterprise Plans**: Custom solutions for scale
+
+## 🔗 Top Integration Ecosystem
+
+Integrate CometAPI into popular software and platforms. Access [CometAPI Console](https://api.cometapi.com/console/token?utm_source=github&utm_medium=readme&utm_campaign=integration) to get an API key.
+
+| Platform | Description |
+|----------|-------------|
+| <img src="assets/integrations/dify.png" width="20" height="20" /> **[Dify](https://github.com/langgenius/dify)** | Production-ready platform for agentic workflow development with AI-powered assistant features |
+| 🚅 **[LiteLLM](https://github.com/BerriAI/litellm)** | Python SDK and Proxy Server to call 100+ LLM APIs in OpenAI format, supporting load balancing and fallbacks |
+| <img src="assets/integrations/langflow.png" width="20" height="20" /> **[Langflow](https://github.com/langflow-ai/langflow)** | Low-code AI workflow builder for creating RAG and multi-agent AI applications visually |
+| <img src="assets/integrations/llamaindex.png" width="20" height="20" /> **[LlamaIndex](https://github.com/run-llama/llama_index)** | Leading data framework for building LLM-powered agents and applications over your data |
+| <img src="assets/integrations/activepieces.png" width="20" height="20" /> **[Activepieces](https://github.com/activepieces/activepieces)** | Open-source AI workflow automation platform with 280+ integration pieces and MCP toolkit |
+| <img src="assets/integrations/lobechat.png" width="20" height="20" /> **[Lobe Chat](https://github.com/lobehub/lobe-chat)** | Modern open-source ChatGPT/LLMs UI with multi-modal support, MCP plugins, and agent capabilities |
+| <img src="assets/integrations/flowise.png" width="20" height="20" /> **[Flowise](https://github.com/FlowiseAI/Flowise)** | Visual drag-and-drop tool to build AI agents and workflows with LangChain components |
+| <img src="assets/integrations/ragflow.png" width="20" height="20" /> **[RAGFlow](https://github.com/infiniflow/ragflow)** | Open-source RAG engine with deep document understanding and retrieval-augmented generation capabilities |
+| <img src="assets/integrations/camel.png" width="20" height="20" /> **[CAMEL-AI](https://github.com/camel-ai/camel)** | First multi-agent framework for finding the scaling laws of agents with 100+ researcher community |
+| <img src="assets/integrations/continue.png" width="20" height="20" /> **[Continue](https://github.com/continuedev/continue)** | Open-source AI code assistant for VS Code and JetBrains with background agents and workflow automation |
+| <img src="assets/integrations/portkey.png" width="20" height="20" /> **[Portkey Gateway](https://github.com/Portkey-AI/gateway)** | Blazing fast AI Gateway with integrated guardrails, routing to 200+ LLMs with one unified API |
+
+*More integrations coming soon. Have a suggestion? [Let us know](https://discord.com/invite/HMpuV6FCrG)!*
 
 ## ✨ Getting Started
 
