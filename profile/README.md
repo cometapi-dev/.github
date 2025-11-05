@@ -51,19 +51,60 @@ CometAPI is a comprehensive AI platform that provides unified access to over **5
 
 Integrate CometAPI into popular software and platforms. Access [CometAPI Console](https://api.cometapi.com/console/token?utm_source=github&utm_medium=readme&utm_campaign=integration) to get an API key.
 
-| Platform | Description |
-|----------|-------------|
-| <img src="../assets/integrations/dify.png" width="24" height="24" style="vertical-align: middle;" /> &nbsp;**[Dify](https://github.com/langgenius/dify)** | Production-ready platform for agentic workflow development with AI-powered assistant features |
-| <span style="font-size: 24px; vertical-align: middle;">🚅</span> &nbsp;**[LiteLLM](https://github.com/BerriAI/litellm)** | Python SDK and Proxy Server to call 100+ LLM APIs in OpenAI format, supporting load balancing and fallbacks |
-| <img src="../assets/integrations/langflow.png" width="24" height="24" style="vertical-align: middle;" /> &nbsp;**[Langflow](https://github.com/langflow-ai/langflow)** | Low-code AI workflow builder for creating RAG and multi-agent AI applications visually |
-| <img src="../assets/integrations/llamaindex.png" width="24" height="24" style="vertical-align: middle;" /> &nbsp;**[LlamaIndex](https://github.com/run-llama/llama_index)** | Leading data framework for building LLM-powered agents and applications over your data |
-| <img src="../assets/integrations/activepieces.png" width="24" height="24" style="vertical-align: middle;" /> &nbsp;**[Activepieces](https://github.com/activepieces/activepieces)** | Open-source AI workflow automation platform with 280+ integration pieces and MCP toolkit |
-| <img src="../assets/integrations/lobechat.png" width="24" height="24" style="vertical-align: middle;" /> &nbsp;**[Lobe Chat](https://github.com/lobehub/lobe-chat)** | Modern open-source ChatGPT/LLMs UI with multi-modal support, MCP plugins, and agent capabilities |
-| <img src="../assets/integrations/flowise.png" width="24" height="24" style="vertical-align: middle;" /> &nbsp;**[Flowise](https://github.com/FlowiseAI/Flowise)** | Visual drag-and-drop tool to build AI agents and workflows with LangChain components |
-| <img src="../assets/integrations/ragflow.png" width="24" height="24" style="vertical-align: middle;" /> &nbsp;**[RAGFlow](https://github.com/infiniflow/ragflow)** | Open-source RAG engine with deep document understanding and retrieval-augmented generation capabilities |
-| <img src="../assets/integrations/camel.png" width="24" height="24" style="vertical-align: middle;" /> &nbsp;**[CAMEL-AI](https://github.com/camel-ai/camel)** | First multi-agent framework for finding the scaling laws of agents with 100+ researcher community |
-| <img src="../assets/integrations/continue.png" width="24" height="24" style="vertical-align: middle;" /> &nbsp;**[Continue](https://github.com/continuedev/continue)** | Open-source AI code assistant for VS Code and JetBrains with background agents and workflow automation |
-| <img src="../assets/integrations/portkey.png" width="24" height="24" style="vertical-align: middle;" /> &nbsp;**[Portkey Gateway](https://github.com/Portkey-AI/gateway)** | Blazing fast AI Gateway with integrated guardrails, routing to 200+ LLMs with one unified API |
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="../assets/integrations/dify.png" width="24" height="24" /> <strong><a href="https://github.com/langgenius/dify">Dify</a></strong></td>
+<td>Production-ready platform for agentic workflow development with AI-powered assistant features</td>
+</tr>
+<tr>
+<td>🚅 <strong><a href="https://github.com/BerriAI/litellm">LiteLLM</a></strong></td>
+<td>Python SDK and Proxy Server to call 100+ LLM APIs in OpenAI format, supporting load balancing and fallbacks</td>
+</tr>
+<tr>
+<td><img src="../assets/integrations/langflow.png" width="24" height="24" /> <strong><a href="https://github.com/langflow-ai/langflow">Langflow</a></strong></td>
+<td>Low-code AI workflow builder for creating RAG and multi-agent AI applications visually</td>
+</tr>
+<tr>
+<td><img src="../assets/integrations/llamaindex.png" width="24" height="24" /> <strong><a href="https://github.com/run-llama/llama_index">LlamaIndex</a></strong></td>
+<td>Leading data framework for building LLM-powered agents and applications over your data</td>
+</tr>
+<tr>
+<td><img src="../assets/integrations/activepieces.png" width="24" height="24" /> <strong><a href="https://github.com/activepieces/activepieces">Activepieces</a></strong></td>
+<td>Open-source AI workflow automation platform with 280+ integration pieces and MCP toolkit</td>
+</tr>
+<tr>
+<td><img src="../assets/integrations/lobechat.png" width="24" height="24" /> <strong><a href="https://github.com/lobehub/lobe-chat">Lobe Chat</a></strong></td>
+<td>Modern open-source ChatGPT/LLMs UI with multi-modal support, MCP plugins, and agent capabilities</td>
+</tr>
+<tr>
+<td><img src="../assets/integrations/flowise.png" width="24" height="24" /> <strong><a href="https://github.com/FlowiseAI/Flowise">Flowise</a></strong></td>
+<td>Visual drag-and-drop tool to build AI agents and workflows with LangChain components</td>
+</tr>
+<tr>
+<td><img src="../assets/integrations/ragflow.png" width="24" height="24" /> <strong><a href="https://github.com/infiniflow/ragflow">RAGFlow</a></strong></td>
+<td>Open-source RAG engine with deep document understanding and retrieval-augmented generation capabilities</td>
+</tr>
+<tr>
+<td><img src="../assets/integrations/camel.png" width="24" height="24" /> <strong><a href="https://github.com/camel-ai/camel">CAMEL-AI</a></strong></td>
+<td>First multi-agent framework for finding the scaling laws of agents with 100+ researcher community</td>
+</tr>
+<tr>
+<td><img src="../assets/integrations/continue.png" width="24" height="24" /> <strong><a href="https://github.com/continuedev/continue">Continue</a></strong></td>
+<td>Open-source AI code assistant for VS Code and JetBrains with background agents and workflow automation</td>
+</tr>
+<tr>
+<td><img src="../assets/integrations/portkey.png" width="24" height="24" /> <strong><a href="https://github.com/Portkey-AI/gateway">Portkey Gateway</a></strong></td>
+<td>Blazing fast AI Gateway with integrated guardrails, routing to 200+ LLMs with one unified API</td>
+</tr>
+</tbody>
+</table>
 
 *More integrations coming soon. Have a suggestion? [Let us know](https://discord.com/invite/HMpuV6FCrG)!*
 
