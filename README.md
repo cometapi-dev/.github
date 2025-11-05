@@ -64,7 +64,7 @@ Integrate CometAPI into popular software and platforms. Access [CometAPI Console
 <td>Production-ready platform for agentic workflow development with AI-powered assistant features</td>
 </tr>
 <tr>
-<td>🚅 <strong><a href="https://github.com/BerriAI/litellm">LiteLLM</a></strong></td>
+<td><span style="display: inline-block; width: 24px; text-align: center;">🚅</span> <strong><a href="https://github.com/BerriAI/litellm">LiteLLM</a></strong></td>
 <td>Python SDK and Proxy Server to call 100+ LLM APIs in OpenAI format, supporting load balancing and fallbacks</td>
 </tr>
 <tr>
