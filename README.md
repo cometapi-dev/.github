@@ -53,17 +53,17 @@ Integrate CometAPI into popular software and platforms. Access [CometAPI Console
 
 | Platform | Description |
 |----------|-------------|
-| <img src="assets/integrations/dify.png" width="20" height="20" /> **[Dify](https://github.com/langgenius/dify)** | Production-ready platform for agentic workflow development with AI-powered assistant features |
-| 🚅 **[LiteLLM](https://github.com/BerriAI/litellm)** | Python SDK and Proxy Server to call 100+ LLM APIs in OpenAI format, supporting load balancing and fallbacks |
-| <img src="assets/integrations/langflow.png" width="20" height="20" /> **[Langflow](https://github.com/langflow-ai/langflow)** | Low-code AI workflow builder for creating RAG and multi-agent AI applications visually |
-| <img src="assets/integrations/llamaindex.png" width="20" height="20" /> **[LlamaIndex](https://github.com/run-llama/llama_index)** | Leading data framework for building LLM-powered agents and applications over your data |
-| <img src="assets/integrations/activepieces.png" width="20" height="20" /> **[Activepieces](https://github.com/activepieces/activepieces)** | Open-source AI workflow automation platform with 280+ integration pieces and MCP toolkit |
-| <img src="assets/integrations/lobechat.png" width="20" height="20" /> **[Lobe Chat](https://github.com/lobehub/lobe-chat)** | Modern open-source ChatGPT/LLMs UI with multi-modal support, MCP plugins, and agent capabilities |
-| <img src="assets/integrations/flowise.png" width="20" height="20" /> **[Flowise](https://github.com/FlowiseAI/Flowise)** | Visual drag-and-drop tool to build AI agents and workflows with LangChain components |
-| <img src="assets/integrations/ragflow.png" width="20" height="20" /> **[RAGFlow](https://github.com/infiniflow/ragflow)** | Open-source RAG engine with deep document understanding and retrieval-augmented generation capabilities |
-| <img src="assets/integrations/camel.png" width="20" height="20" /> **[CAMEL-AI](https://github.com/camel-ai/camel)** | First multi-agent framework for finding the scaling laws of agents with 100+ researcher community |
-| <img src="assets/integrations/continue.png" width="20" height="20" /> **[Continue](https://github.com/continuedev/continue)** | Open-source AI code assistant for VS Code and JetBrains with background agents and workflow automation |
-| <img src="assets/integrations/portkey.png" width="20" height="20" /> **[Portkey Gateway](https://github.com/Portkey-AI/gateway)** | Blazing fast AI Gateway with integrated guardrails, routing to 200+ LLMs with one unified API |
+| <img src="assets/integrations/dify.png" width="24" height="24" style="vertical-align: middle;" /> &nbsp;**[Dify](https://github.com/langgenius/dify)** | Production-ready platform for agentic workflow development with AI-powered assistant features |
+| <span style="font-size: 24px; vertical-align: middle;">🚅</span> &nbsp;**[LiteLLM](https://github.com/BerriAI/litellm)** | Python SDK and Proxy Server to call 100+ LLM APIs in OpenAI format, supporting load balancing and fallbacks |
+| <img src="assets/integrations/langflow.png" width="24" height="24" style="vertical-align: middle;" /> &nbsp;**[Langflow](https://github.com/langflow-ai/langflow)** | Low-code AI workflow builder for creating RAG and multi-agent AI applications visually |
+| <img src="assets/integrations/llamaindex.png" width="24" height="24" style="vertical-align: middle;" /> &nbsp;**[LlamaIndex](https://github.com/run-llama/llama_index)** | Leading data framework for building LLM-powered agents and applications over your data |
+| <img src="assets/integrations/activepieces.png" width="24" height="24" style="vertical-align: middle;" /> &nbsp;**[Activepieces](https://github.com/activepieces/activepieces)** | Open-source AI workflow automation platform with 280+ integration pieces and MCP toolkit |
+| <img src="assets/integrations/lobechat.png" width="24" height="24" style="vertical-align: middle;" /> &nbsp;**[Lobe Chat](https://github.com/lobehub/lobe-chat)** | Modern open-source ChatGPT/LLMs UI with multi-modal support, MCP plugins, and agent capabilities |
+| <img src="assets/integrations/flowise.png" width="24" height="24" style="vertical-align: middle;" /> &nbsp;**[Flowise](https://github.com/FlowiseAI/Flowise)** | Visual drag-and-drop tool to build AI agents and workflows with LangChain components |
+| <img src="assets/integrations/ragflow.png" width="24" height="24" style="vertical-align: middle;" /> &nbsp;**[RAGFlow](https://github.com/infiniflow/ragflow)** | Open-source RAG engine with deep document understanding and retrieval-augmented generation capabilities |
+| <img src="assets/integrations/camel.png" width="24" height="24" style="vertical-align: middle;" /> &nbsp;**[CAMEL-AI](https://github.com/camel-ai/camel)** | First multi-agent framework for finding the scaling laws of agents with 100+ researcher community |
+| <img src="assets/integrations/continue.png" width="24" height="24" style="vertical-align: middle;" /> &nbsp;**[Continue](https://github.com/continuedev/continue)** | Open-source AI code assistant for VS Code and JetBrains with background agents and workflow automation |
+| <img src="assets/integrations/portkey.png" width="24" height="24" style="vertical-align: middle;" /> &nbsp;**[Portkey Gateway](https://github.com/Portkey-AI/gateway)** | Blazing fast AI Gateway with integrated guardrails, routing to 200+ LLMs with one unified API |
 
 *More integrations coming soon. Have a suggestion? [Let us know](https://discord.com/invite/HMpuV6FCrG)!*
 
