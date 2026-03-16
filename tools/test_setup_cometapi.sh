@@ -7,7 +7,7 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-SETUP_SCRIPT="${SCRIPT_DIR}/setup_cometapi.sh"
+SETUP_SCRIPT="${SCRIPT_DIR}/../setup.sh"
 TEST_DIR="$(mktemp -d)"
 FAKE_HOME="${TEST_DIR}/fakehome"
 FAKE_BIN="${TEST_DIR}/fakebin"

@@ -37,11 +37,11 @@ jobs:
         shell: pwsh
 
       - name: Dry-run (format + SkipVerify)
-        run: pwsh tools/setup_cometapi.ps1 -Key sk-testkey1234567890 -DryRun -SkipVerify
+        run: pwsh setup.ps1 -Key sk-testkey1234567890 -DryRun -SkipVerify
         shell: pwsh
 
       - name: Full install (SkipVerify)
-        run: pwsh tools/setup_cometapi.ps1 -Key sk-testkey1234567890 -SkipVerify
+        run: pwsh setup.ps1 -Key sk-testkey1234567890 -SkipVerify
         shell: pwsh
 
       - name: Assert .env written
@@ -63,7 +63,7 @@ jobs:
 
       - name: Idempotency (re-run)
         run: |
-          pwsh tools/setup_cometapi.ps1 -Key sk-testkey1234567890 -SkipVerify
+          pwsh setup.ps1 -Key sk-testkey1234567890 -SkipVerify
           $count = ($cfg = Get-Content (Join-Path $HOME ".openclaw\openclaw.json") -Raw | ConvertFrom-Json).models.providers.PSObject.Properties.Count
           if ($count -ne 4) { throw "Expected 4 providers, got $count" }
           Write-Host "✅ Idempotency OK"
@@ -71,7 +71,7 @@ jobs:
 
       - name: --add-model
         run: |
-          pwsh tools/setup_cometapi.ps1 -Key sk-testkey1234567890 -AddModel cometapi-openai/gpt-5-test -SkipVerify
+          pwsh setup.ps1 -Key sk-testkey1234567890 -AddModel cometapi-openai/gpt-5-test -SkipVerify
           $ids = (Get-Content (Join-Path $HOME ".openclaw\openclaw.json") -Raw | ConvertFrom-Json).models.providers.'cometapi-openai'.models | ForEach-Object { $_.id }
           if ($ids -notcontains 'gpt-5-test') { throw "gpt-5-test not added" }
           Write-Host "✅ --add-model OK"
@@ -79,7 +79,7 @@ jobs:
 
       - name: Rejects invalid key
         run: |
-          pwsh tools/setup_cometapi.ps1 -Key badkey -SkipVerify; $code = $LASTEXITCODE
+          pwsh setup.ps1 -Key badkey -SkipVerify; $code = $LASTEXITCODE
           if ($code -eq 0) { throw "Expected non-zero exit for invalid key" }
           Write-Host "✅ Invalid key rejected (exit $code)"
         shell: pwsh
