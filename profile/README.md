@@ -35,7 +35,7 @@ CometAPI is a comprehensive AI platform that provides unified access to over **5
 - **Audio & Music**: Suno Music API, voice synthesis models
 - **Specialized Models**: Coding assistants, translation services, OCR
 
-*View all 500+ available models at [CometAPI Model List](https://api.cometapi.com/pricing)*
+*View all 500+ available models at [CometAPI Model List](https://www.cometapi.com/models/)*
 
 ### **⚡ Real-time Model Access**
 - Instant access to newly released AI models
@@ -49,7 +49,7 @@ CometAPI is a comprehensive AI platform that provides unified access to over **5
 
 ## 🔗 Top Integration Ecosystem
 
-Integrate CometAPI into popular software and platforms. Access [CometAPI Console](https://api.cometapi.com/console/token?utm_source=github&utm_medium=readme&utm_campaign=integration) to get an API key.
+Integrate CometAPI into popular software and platforms. Access [CometAPI Console](https://www.cometapi.com/console/?utm_source=github&utm_medium=readme&utm_campaign=integration) to get an API key.
 
 <div align="center">
 
@@ -74,8 +74,8 @@ Integrate CometAPI into popular software and platforms. Access [CometAPI Console
 ## ✨ Getting Started
 
 ### Get Your API Key
-1. Sign up for a CometAPI account [CometAPI Login](https://api.cometapi.com/)
-2. Visit [CometAPI Console](https://api.cometapi.com/console/token)
+1. Sign up for a CometAPI account [CometAPI Login](https://www.cometapi.com/console/)
+2. Visit [CometAPI Console](https://www.cometapi.com/console/)
 3. Start building with AI now!
 
 ### Quick CometAPI call
@@ -90,9 +90,9 @@ curl -X POST "https://api.cometapi.com/v1/chat/completions" \
 ## 📚 Resources
 
 ### Documentation & Support
-- **📖 API Documentation**: [api.cometapi.com/doc](https://api.cometapi.com/doc)
-- **🚀 Quick Start Guide**: [api.cometapi.com/panel](https://api.cometapi.com/panel)
-- **💰 Model Pricing Details**: [api.cometapi.com/pricing](https://api.cometapi.com/pricing)
+- **📖 API Documentation**: [apidoc.cometapi.com](https://apidoc.cometapi.com/)
+- **🚀 Quick Start Guide**: [apidoc.cometapi.com/overview/quick-start](https://apidoc.cometapi.com/overview/quick-start)
+- **💰 Model Pricing Details**: [cometapi.com/pricing](https://www.cometapi.com/pricing/)
 
 ### Community & Support
 - **💬 Discord Community**: [Join our Discord](https://discord.com/invite/HMpuV6FCrG)
@@ -133,7 +133,7 @@ Ready to transform your projects with the power of 500+ AI models?
 
 <div align="center">
 
-**[🚀 Get Started Now](https://api.cometapi.com/setting) | [📖 Read the Docs](https://api.cometapi.com/doc) | [💬 Join Discord](https://discord.com/invite/HMpuV6FCrG)**
+**[🚀 Get Started Now](https://www.cometapi.com/console/) | [📖 Read the Docs](https://apidoc.cometapi.com/) | [💬 Join Discord](https://discord.com/invite/HMpuV6FCrG)**
 
 </div>
 
